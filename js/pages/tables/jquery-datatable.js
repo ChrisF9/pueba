@@ -1,5 +1,5 @@
 $(function () {
-	var numCols = ($("#tabla_facturas").find("tr")[0].cells.length) - 4;
+		var numCols = ($("#tabla_facturas").find("tr")[0].cells.length) - 4;
 		var tablaGestion = $("#tabla_facturas").DataTable({
 			dom: "Blfrtip",
 			buttons: ["copy"],
@@ -44,27 +44,27 @@ $(function () {
 		filaOpciones.append(colFiltro);
 
 
-		$("#table_wrapper").prepend(filaOpciones);
+		$("#tabla_facturas_wrapper").prepend(filaOpciones);
 
 		var filaRegistros = $('<div class="row"></div>');
 		var colInfo = $('<div id="colInfo" class="col-xs-12 col-sm-6"></div>');
 		var colPaginacion = $('<div id="colPaginacion" class="col-xs-12 col-sm-6"></div>');
 
-		$("#table_info").appendTo(colInfo);
-		$("#table_paginate").appendTo(colPaginacion);
+		$("#tabla_facturas_info").appendTo(colInfo);
+		$("#tabla_facturas_paginate").appendTo(colPaginacion);
 
 		filaRegistros.prepend(colInfo);
 		filaRegistros.append(colPaginacion);
 
-		$("#table_wrapper").append(filaRegistros);
+		$("#tabla_facturas_wrapper").append(filaRegistros);
 	
 			  
-    //Exportable table
-    $('.js-exportable').DataTable({
-        dom: 'Bfrtip',
-        responsive: true,
-        buttons: [
-            'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
-    });
+		//Exportable table
+		$('.js-exportable').DataTable({
+			dom: 'Bfrtip',
+			responsive: true,
+			buttons: [
+				'copy', 'csv', 'excel', 'pdf', 'print'
+			]
+		});
 });
