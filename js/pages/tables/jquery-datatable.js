@@ -1,8 +1,8 @@
 $(function () {
-	var numCols = ($(".js-basic-example").find("tr")[0].cells.length) - 4;
-    $('.js-basic-example').DataTable({
-        responsive: true,
-		dom: "Blfrtip",
+	var numCols = ($("#tabla_facturas").find("tr")[0].cells.length) - 4;
+			  var tablaGestion = $("#tabla_facturas").DataTable({
+			   
+				dom: "Blfrtip",
 				buttons: ["copy"],
 				//"slengthMenu": true,
 				"searching": true,
@@ -31,10 +31,9 @@ $(function () {
 					copy: "Copiar"
 				  }
 				}
-	});
+			  });
 	
 			  
-
     //Exportable table
     $('.js-exportable').DataTable({
         dom: 'Bfrtip',
