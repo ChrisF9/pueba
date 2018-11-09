@@ -37,8 +37,8 @@ $(function () {
 		var colMostrar = $('<div id="colMostrar" class="col-xs-12 col-sm-6"></div>');
 		var colFiltro = $('<div id="colFiltro" class="col-xs-12 col-sm-4"></div>');
 
-		$("#tablaGestion_length").appendTo(colMostrar);
-		$("#tablaGestion_filter").appendTo(colFiltro);
+		$("#tabla_facturas_length").appendTo(colMostrar);
+		$("#tabla_facturas_filter").appendTo(colFiltro);
 
 		filaOpciones.append(colMostrar);
 		filaOpciones.append(colFiltro);
