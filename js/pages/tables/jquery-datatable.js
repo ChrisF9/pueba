@@ -33,32 +33,7 @@ $(function () {
 				}
 	});
 	
-			  $(document).ready(function() {
-				  var filaOpciones = $('<div class="row></div>');
-				  var colMostrar = $('<div id="colMostrar" class="col-xs-12 col-sm-6"></div>');
-				  var colFiltro = $('<div id="colFiltro" class="col-xs-12 col-sm-4"></div>');
-
-				  $("#table_length").appendTo(colMostrar);
-				  $("#tablaGestion_filter").appendTo(colFiltro);
-
-				  filaOpciones.append(colMostrar);
-				  filaOpciones.append(colFiltro);
-
-
-				  $("#table_wrapper").prepend(filaOpciones);
-
-				  var filaRegistros = $('<div class="row"></div>');
-				  var colInfo = $('<div id="colInfo" class="col-xs-12 col-sm-6"></div>');
-				  var colPaginacion = $('<div id="colPaginacion" class="col-xs-12 col-sm-6"></div>');
-
-				  $("#table_info").appendTo(colInfo);
-				  $("#table_paginate").appendTo(colPaginacion);
-
-				  filaRegistros.prepend(colInfo);
-				  filaRegistros.append(colPaginacion);
-
-				  $("#table_wrapper").append(filaRegistros);
-				});
+			  
 
     //Exportable table
     $('.js-exportable').DataTable({
