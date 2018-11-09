@@ -1,6 +1,7 @@
 $(function () {
 		var numCols = ($("#tabla_facturas").find("tr")[0].cells.length) - 4;
 		var tablaGestion = $("#tabla_facturas").DataTable({
+            responsive: true,
 			dom: "Blfrtip",
 			buttons: ["copy"],
 			//"slengthMenu": true,
